@@ -1,0 +1,9 @@
+[project]
+name = "nautilus_channels"
+version = "0.1.0"
+description = "A external communication interface for the Nautilus Trader algorithmic trading platform."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "nautilus-trader>=1.216.0",
+]
