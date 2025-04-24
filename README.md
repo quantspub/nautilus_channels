@@ -1,15 +1,12 @@
 # Nautilus Channels
 
-A external communication interface for the Nautilus Trader algorithmic trading platform.
-
-`nautilus-channels` is a module for [Nautilus Trader](https://nautilustrader.io/) that provides a flexible and unified way to interact with various external communication channels, such as social platforms (Telegram, Discord), SMS gateways, and potentially other notification endpoints (like push notification services).
+This is a module for [Nautilus Trader](https://nautilustrader.io/) that provides a flexible and unified way to interact with various external communication channels, such as social platforms (Telegram, Discord), SMS gateways, and potentially other notification endpoints (like push notification services).
 
 This module allows your Nautilus Trader strategies and components to:
 
 * Send real-time notifications and alerts based on trading events, strategy signals, or system status.
 * Receive commands and instructions from external channels, enabling interactive control of your trading system.
 
-By abstracting the specifics of each communication platform, `nautilus-channels` simplifies the integration of external messaging and command capabilities into your algorithmic trading workflows.
 
 ## Features
 
