@@ -5,6 +5,7 @@ Nautilus Trader - Communication Channel Module
 from __future__ import annotations
 from typing import Any, Optional, Dict
 from abc import ABC, abstractmethod
+from nautilus_trader.core.data import Data
 from nautilus_trader.core.correctness import PyCondition
 from nautilus_trader.common.actor import Actor, ActorConfig
 
@@ -17,6 +18,22 @@ class ChannelType:
     WHATSAPP = "whatsapp"
     PUSH_NOTIFICATIONS = "push_notifications"
 
+class ChannelData(Data):
+    """
+    Data class for communication channels.
+
+    Attributes:
+    -----------
+    channel_type : ChannelType
+        The type of the channel (e.g., Telegram, Discord).
+    channel_id : str
+        The unique identifier for the channel.
+    """
+    channel_type: ChannelType
+    channel_id: str
+    message: Optional[str] = None
+    data: Optional[Dict[str, Any]] = None
+    
 class ChannelConfig(ActorConfig):
     """
     Configuration for a communication channel.
