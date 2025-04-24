@@ -14,7 +14,7 @@ This module allows your Nautilus Trader strategies and components to:
 * **Bidirectional Communication:** Facilitates both sending alerts/notifications *from* Nautilus Trader and receiving commands/messages *to* Nautilus Trader.
 * **Pluggable Architecture:** Designed to easily add support for new communication channels by implementing a defined interface.
 * **Seamless Nautilus Integration:** Connects with the Nautilus Trader core, likely interacting with the MessageBus or other relevant components to send and receive information.
-* **Configurable Endpoints:** Allowsसाठी granular configuration of which alerts go to which channels and how commands are processed from each source.
+* **Configurable Endpoints:** Allows granular configuration of which alerts go to which channels and how commands are processed from each source.
 
 ## Installation
 
